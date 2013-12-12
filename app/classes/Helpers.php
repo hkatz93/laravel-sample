@@ -8,15 +8,15 @@ class Helpers {
 	public static function doMessage() {
 		$message = 'Hello';
 		return $message;
-		}
+	}
 
 
 	/**
 	* @param integer n
-	* @param boolean if true returns the array of Fibonacci numbers
-	* @return array
+	* @param boolean if true returns the entire array of Fibonacci numbers
+	* @return array 
 	*/
-	public static function fibonacci_list($n, $full_list=false){
+	public static function fibonacciList($n, $full_list=false){
 		$f_list = array();
 		$f_list[0] = 1;
 		$f_list[1] = 1;

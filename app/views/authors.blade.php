@@ -10,7 +10,7 @@
 echo Helpers::doMessage();
 
 echo "<hr>";
-echo "fibonacci(12) = " . print_r(Helpers::fibonacci_list(12));
+echo "fibonacci(12) = " . print_r(Helpers::fibonacciList(12));
 echo "<hr>";
-echo "fibonacci(12) = " . print_r(Helpers::fibonacci_list(12,true));
+echo "fibonacci(12) = " . print_r(Helpers::fibonacciList(12,true));
 ?>
