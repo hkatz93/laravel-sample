@@ -19,7 +19,7 @@ Route::get('/', function()
 Route::get('/users', function()
 {
 	return View::make('users');
-    return 'Users!';
+    //return 'Users!';
 });
 
 Route::get('user/{id}', function($id)
