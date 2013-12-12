@@ -1,6 +1,6 @@
 <html>
     <body>
-        <h1>Laravel Quickstart: Sonar Test</h1>
+        <h1>Sonar Test: (super-bland vanilla-style)</h1>
 
         @yield('content')
     </body>

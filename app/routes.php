@@ -16,6 +16,16 @@ Route::get('/', function()
 	return View::make('hello');
 });
 
+Route::get('test/info', function()
+{
+    //$authors = Author::all();
+
+    //return View::make('authors')->with('authors', $authors);
+	return View::make('testinfo');
+});
+
+
+
 Route::get('/users', function()
 {
 	return View::make('users');
@@ -33,3 +43,4 @@ Route::get('authors', function()
 
     return View::make('authors')->with('authors', $authors);
 });
+
