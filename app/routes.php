@@ -16,13 +16,15 @@ Route::get('/', function()
 	return View::make('hello');
 });
 
+/** non-controller routing 
 Route::get('test/info', function()
 {
-    //$authors = Author::all();
-
-    //return View::make('authors')->with('authors', $authors);
 	return View::make('testinfo');
 });
+*/
+
+Route::get('test/info', 'SonartestController@getIndex');
+//Route::get('test/info', 'SonartestController');
 
 
 
