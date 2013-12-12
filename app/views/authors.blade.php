@@ -1,5 +1,7 @@
 @extends('layout')
 
 @section('content')
-    Content: Authors!
+    @foreach($authors as $author)
+        <p>{{ $author->name }}</p>
+    @endforeach
 @stop
