@@ -26,3 +26,10 @@ Route::get('user/{id}', function($id)
 {
     return 'User '.$id;
 });
+
+Route::get('authors', function()
+{
+    $authors = Author::all();
+
+    return View::make('authors')->with('authors', $authors);
+});
