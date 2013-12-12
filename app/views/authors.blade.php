@@ -5,3 +5,8 @@
         <p>{{ $author->name }}</p>
     @endforeach
 @stop
+
+<?php
+echo Helpers::doMessage();
+
+?>
