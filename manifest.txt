@@ -1,0 +1,23 @@
+12/12/2013 Test application 
+
+
+The files relevant to the test application are the following:
+
+app/classes/Helpers.php
+app/controllers/SonartestController.php
+app/routes.php
+app/start/global.php
+app/views/layout.blade.php
+app/views/testinfo.blade.php
+composer.json
+public/css/common.css
+
+Other changes were made for my own experimentation and learning:
+
+app/controllers/HomeController.php
+app/database/migrations/2013_12_12_165455_create_authors_table.php
+app/database/migrations/2013_12_12_165656_create_users_table.php
+app/models/Author.php
+app/views/authors.blade.php
+app/views/users.blade.php
+app/config/database.php
