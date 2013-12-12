@@ -10,27 +10,23 @@ class Helpers {
 		return $message;
 		}
 
-	/**
-	* 
-	*/
-	public static function fibonacci($n, $first=0, $second=0) {
-		if( $n > 0 ) {
-			$sum = $first + $second;
-			$first = $second;
-			$second = $sum;
-			print $sum;
-			self::fibonacci($n-1, $first, $second);
-		}
-	}
 
-	
-	public static function fib($n, $all=0){
-		$f = array();
-		$f[0] = 1;
-		$f[1] = 1;
-		for($i = 2; $i<= $n; $i++) $f[$i] = $f[$i-1]+$f[$i-2];
-		if($all) return $f;
-		return $f[$n];
+	/**
+	* @param integer n
+	* @param boolean if true returns the array of Fibonacci numbers
+	* @return array
+	*/
+	public static function fibonacci_list($n, $full_list=false){
+		$f_list = array();
+		$f_list[0] = 1;
+		$f_list[1] = 1;
+		for($i = 2; $i<= $n; $i++) {
+			$f_list[$i] = $f_list[$i-1] + $f_list[$i-2];
+		}
+		if($full_list) {
+			return $f_list;
+		}
+		return array($f_list[$n]); // force single value into array, better to consistently return the same type
 	}
 
 }

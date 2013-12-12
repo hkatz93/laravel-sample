@@ -9,9 +9,8 @@
 <?php
 echo Helpers::doMessage();
 
-echo "fibonacci(12) = " . Helpers::fibonacci(12);
 echo "<hr>";
-echo "fibonacci(12) = " . Helpers::fib(12);
+echo "fibonacci(12) = " . print_r(Helpers::fibonacci_list(12));
 echo "<hr>";
-echo "fibonacci(12) = " . print_r(Helpers::fib(12,1));
+echo "fibonacci(12) = " . print_r(Helpers::fibonacci_list(12,true));
 ?>
